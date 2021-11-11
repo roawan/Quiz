@@ -3,11 +3,12 @@ import random
 score = 0
 score = int(score)
 
-name = input("""Hello, welcome to math quiz.
+name = input("""Hello, Welcome to my Math Quiz.
 What is your name?""")
 name = name.title()
 print("Hello {} \nYou will be asked with 5 questions involving basic math, then 5 random addition, subtraction or multiplication questions.\nDo not write the answer, instead answer with the letter designated to each answer, listed when asked, except on the last 5 where you must answer with the result.\nGood luck".format(name))
-
+print()
+print()
 print("""What is the Square Root of 100?
 a.  11
 b.  10
@@ -19,11 +20,14 @@ response1 = input("Your answer is: ")
 
 if response1 != answer1:
     print("Sorry, that is incorrect!")
+    print()
 else:
     print("Well done! " + response1 + " is correct!")
+    print()
     score = score + 1
 
-print("Your current score is " + str(score) + " out of 5")
+print("Your current score is " + str(score) + " out of 10")
+print()
 
 print("""5 x 7 =?
 a. 35 
@@ -36,11 +40,14 @@ response2 = input("Your answer is:")
 
 if response2 != answer2:
     print("Sorry, that is incorrect!")
+    print()
 else:
     print("Well done! " + response2 + " is correct!")
+    print()
     score = score + 1
 
-print("Your current score is " + str(score) + " out of 5")
+print("Your current score is " + str(score) + " out of 10")
+print()
 
 print("""8 x (9 + 3) =?
 a.  98
@@ -53,11 +60,14 @@ response3 = input("Your answer is:")
 
 if response3 != answer3:
     print("Sorry, that is incorrect!")
+    print()
 else:
     print("Well done! " + response3 + " is correct!")
+    print()
     score = score + 1
 
-print("Your current score is " + str(score) + " out of 5")
+print("Your current score is " + str(score) + " out of 10")
+print()
 
 print("""76 - 42
 a. 34
@@ -70,11 +80,14 @@ response4 = input("Your answer is:")
 
 if response4 != answer4:
     print("Sorry, that is incorrect!")
+    print()
 else:
     print("Well done! " + response4 + " is correct!")
+    print()
     score = score + 1
 
-print("Your current score is " + str(score) + " out of 5")
+print("Your current score is " + str(score) + " out of 10")
+print()
 
 print(""" The Hypotenuse times sin(𝛳) = the length of the opposite
 a. False
@@ -85,13 +98,19 @@ response5 = input("Your answer is:")
 
 if response5 != answer5:
     print("Sorry, that is incorrect!")
+    print()
 else:
     print("Well done! " + response5 + " is correct!")
+    print()
     score = score + 1
 
 print("Rapid Questions")
+print()
 
-question = input("You will be asked 5 randoms questions in quick succession.\nReady?")
+print("Your current score is " + str(score) + " out of 10")
+print()
+print()
+question = input("You will be asked 5 random questions in quick succession.\nReady?")
 
 
 def yes_no(question):
